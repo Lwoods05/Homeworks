@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LWS Creations</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Collections of my projects</h1>
+        <p>Explore my creative work and get in touch with me.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>My First Coloring Book</h3>
+            <p>Bright, playful pages made for fun and imagination.</p>
+          </article>
+          <article class="card">
+            <h3>My First Comic Book</h3>
+            <p>A simple storybook layout that helped me learn structure and design.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="#" method="post" aria-describedby="contact-help">
+          <p id="contact-help">Please fill out the form below and I will get back to you soon.</p>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
