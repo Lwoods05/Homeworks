@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" aria-label="CSI computer forensics technician at a workstation">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050d1a"/>
+      <stop offset="100%" style="stop-color:#0d1b3e"/>
+    </linearGradient>
+    <linearGradient id="screenGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#001f3f"/>
+      <stop offset="100%" style="stop-color:#00111f"/>
+    </linearGradient>
+    <linearGradient id="screenGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a001f"/>
+      <stop offset="100%" style="stop-color:#05000f"/>
+    </linearGradient>
+    <linearGradient id="deskGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2744"/>
+      <stop offset="100%" style="stop-color:#0d1b34"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- scan line pattern -->
+    <pattern id="scanlines" width="1" height="4" patternUnits="userSpaceOnUse">
+      <rect width="1" height="2" fill="rgba(0,0,0,0.18)"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="640" height="420" fill="url(#bgGrad)"/>
+
+  <!-- Background grid -->
+  <g opacity="0.12" stroke="#06b6d4" stroke-width="0.5">
+    <line x1="0" y1="60" x2="640" y2="60"/>
+    <line x1="0" y1="120" x2="640" y2="120"/>
+    <line x1="0" y1="180" x2="640" y2="180"/>
+    <line x1="0" y1="240" x2="640" y2="240"/>
+    <line x1="0" y1="300" x2="640" y2="300"/>
+    <line x1="0" y1="360" x2="640" y2="360"/>
+    <line x1="80" y1="0" x2="80" y2="420"/>
+    <line x1="160" y1="0" x2="160" y2="420"/>
+    <line x1="240" y1="0" x2="240" y2="420"/>
+    <line x1="320" y1="0" x2="320" y2="420"/>
+    <line x1="400" y1="0" x2="400" y2="420"/>
+    <line x1="480" y1="0" x2="480" y2="420"/>
+    <line x1="560" y1="0" x2="560" y2="420"/>
+  </g>
+
+  <!-- Desk surface -->
+  <rect x="30" y="290" width="580" height="18" rx="4" fill="url(#deskGrad)" stroke="#1e3a5f" stroke-width="1.5"/>
+  <rect x="30" y="306" width="580" height="8" rx="2" fill="#0a1525"/>
+
+  <!-- ── LEFT MONITOR ── -->
+  <rect x="50" y="150" width="180" height="140" rx="8" fill="#0a1220" stroke="#06b6d4" stroke-width="2"/>
+  <rect x="50" y="150" width="180" height="140" rx="8" fill="url(#scanlines)" opacity="0.5"/>
+  <!-- screen content: code lines -->
+  <rect x="58" y="158" width="164" height="124" rx="4" fill="url(#screenGrad1)"/>
+  <!-- code lines on left monitor -->
+  <text x="64" y="174" font-family="'Courier New', monospace" font-size="7" fill="#10b981">$ forensic-scan --drive /dev/sdb</text>
+  <text x="64" y="185" font-family="'Courier New', monospace" font-size="7" fill="#06b6d4">&gt; Reading sector map...</text>
+  <text x="64" y="196" font-family="'Courier New', monospace" font-size="7" fill="#10b981">[■■■■■■■■■■] 100%</text>
+  <text x="64" y="207" font-family="'Courier New', monospace" font-size="7" fill="#f59e0b">! Deleted file recovered:</text>
+  <text x="64" y="218" font-family="'Courier New', monospace" font-size="6.5" fill="#e2e8f0">  evidence_001.img</text>
+  <text x="64" y="229" font-family="'Courier New', monospace" font-size="6.5" fill="#e2e8f0">  timestamp: 2026-08-09</text>
+  <text x="64" y="240" font-family="'Courier New', monospace" font-size="7" fill="#10b981">Hash: SHA256 verified ✓</text>
+  <text x="64" y="253" font-family="'Courier New', monospace" font-size="6" fill="#06b6d4">Sectors: 0-2048 flagged</text>
+  <text x="64" y="264" font-family="'Courier New', monospace" font-size="7" fill="#10b981">_<animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></text>
+  <!-- monitor stand -->
+  <rect x="128" y="290" width="24" height="12" rx="2" fill="#0d1b3e" stroke="#1e3a5f" stroke-width="1"/>
+  <rect x="112" y="300" width="56" height="6" rx="3" fill="#0a1525" stroke="#1e3a5f" stroke-width="1"/>
+
+  <!-- ── CENTER MONITOR (main, taller) ── -->
+  <rect x="250" y="110" width="200" height="180" rx="8" fill="#0a1220" stroke="#7c3aed" stroke-width="2.5" filter="url(#softglow)"/>
+  <rect x="250" y="110" width="200" height="180" rx="8" fill="url(#scanlines)" opacity="0.4"/>
+  <rect x="258" y="118" width="184" height="164" rx="4" fill="#060010"/>
+  <!-- fingerprint visualization on center monitor -->
+  <g transform="translate(350,180)" filter="url(#glow)">
+    <!-- fingerprint rings -->
+    <ellipse cx="0" cy="0" rx="54" ry="68" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.9"/>
+    <ellipse cx="0" cy="0" rx="44" ry="56" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.85"/>
+    <ellipse cx="0" cy="0" rx="34" ry="44" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.8"/>
+    <ellipse cx="0" cy="0" rx="24" ry="32" fill="none" stroke="#a855f7" stroke-width="1.2" opacity="0.9"/>
+    <ellipse cx="0" cy="0" rx="14" ry="20" fill="none" stroke="#a855f7" stroke-width="1.4" opacity="1"/>
+    <ellipse cx="0" cy="0" rx="6" ry="9" fill="none" stroke="#d8b4fe" stroke-width="1.5" opacity="1"/>
+    <circle cx="0" cy="0" r="2.5" fill="#d8b4fe"/>
+    <!-- scan line sweep -->
+    <line x1="-60" y1="0" x2="60" y2="0" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/>
+    <line x1="0" y1="-75" x2="0" y2="75" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/>
+  </g>
+  <!-- labels on center monitor -->
+  <text x="280" y="135" font-family="'Courier New', monospace" font-size="7.5" fill="#a855f7" font-weight="bold">BIOMETRIC ANALYSIS</text>
+  <text x="280" y="146" font-family="'Courier New', monospace" font-size="6.5" fill="#06b6d4">Subject: UNKNOWN</text>
+  <text x="280" y="268" font-family="'Courier New', monospace" font-size="6.5" fill="#f59e0b">Match confidence: 97.4%</text>
+  <!-- monitor stand -->
+  <rect x="338" y="290" width="24" height="12" rx="2" fill="#0d1b3e" stroke="#1e3a5f" stroke-width="1"/>
+  <rect x="318" y="300" width="64" height="6" rx="3" fill="#0a1525" stroke="#1e3a5f" stroke-width="1"/>
+
+  <!-- ── RIGHT MONITOR ── -->
+  <rect x="468" y="155" width="160" height="135" rx="8" fill="#0a1220" stroke="#06b6d4" stroke-width="2"/>
+  <rect x="468" y="155" width="160" height="135" rx="8" fill="url(#scanlines)" opacity="0.5"/>
+  <rect x="476" y="163" width="144" height="119" rx="4" fill="url(#screenGrad1)"/>
+  <!-- network graph on right monitor -->
+  <text x="482" y="177" font-family="'Courier New', monospace" font-size="7.5" fill="#f59e0b" font-weight="bold">NETWORK MAP</text>
+  <!-- nodes and connections -->
+  <g filter="url(#glow)">
+    <!-- connections -->
+    <line x1="548" y1="220" x2="502" y2="200" stroke="#06b6d4" stroke-width="1" opacity="0.7"/>
+    <line x1="548" y1="220" x2="594" y2="200" stroke="#06b6d4" stroke-width="1" opacity="0.7"/>
+    <line x1="548" y1="220" x2="520" y2="248" stroke="#f59e0b" stroke-width="1.5" opacity="0.8"/>
+    <line x1="548" y1="220" x2="576" y2="248" stroke="#06b6d4" stroke-width="1" opacity="0.7"/>
+    <line x1="548" y1="220" x2="548" y2="190" stroke="#10b981" stroke-width="1" opacity="0.6"/>
+    <!-- nodes -->
+    <circle cx="548" cy="220" r="8" fill="#0d1b3e" stroke="#7c3aed" stroke-width="2.5"/>
+    <circle cx="548" cy="220" r="4" fill="#7c3aed"/>
+    <circle cx="502" cy="200" r="5" fill="#0d1b3e" stroke="#06b6d4" stroke-width="1.5"/>
+    <circle cx="502" cy="200" r="2.5" fill="#06b6d4"/>
+    <circle cx="594" cy="200" r="5" fill="#0d1b3e" stroke="#06b6d4" stroke-width="1.5"/>
+    <circle cx="594" cy="200" r="2.5" fill="#06b6d4"/>
+    <circle cx="520" cy="248" r="6" fill="#0d1b3e" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="520" cy="248" r="3" fill="#f59e0b"/>
+    <circle cx="576" cy="248" r="5" fill="#0d1b3e" stroke="#06b6d4" stroke-width="1.5"/>
+    <circle cx="576" cy="248" r="2.5" fill="#06b6d4"/>
+    <circle cx="548" cy="190" r="5" fill="#0d1b3e" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="548" cy="190" r="2.5" fill="#10b981"/>
+  </g>
+  <text x="482" y="272" font-family="'Courier New', monospace" font-size="6" fill="#f59e0b">⚠ Suspicious node flagged</text>
+  <!-- monitor stand -->
+  <rect x="536" y="290" width="24" height="12" rx="2" fill="#0d1b3e" stroke="#1e3a5f" stroke-width="1"/>
+  <rect x="518" y="300" width="60" height="6" rx="3" fill="#0a1525" stroke="#1e3a5f" stroke-width="1"/>
+
+  <!-- ── KEYBOARD ── -->
+  <rect x="270" y="308" width="160" height="18" rx="4" fill="#0d1b3e" stroke="#1e3a5f" stroke-width="1.2"/>
+  <g fill="#1e3a5f">
+    <rect x="276" y="312" width="10" height="6" rx="1"/>
+    <rect x="290" y="312" width="10" height="6" rx="1"/>
+    <rect x="304" y="312" width="10" height="6" rx="1"/>
+    <rect x="318" y="312" width="10" height="6" rx="1"/>
+    <rect x="332" y="312" width="10" height="6" rx="1"/>
+    <rect x="346" y="312" width="10" height="6" rx="1"/>
+    <rect x="360" y="312" width="10" height="6" rx="1"/>
+    <rect x="374" y="312" width="16" height="6" rx="1"/>
+    <rect x="394" y="312" width="10" height="6" rx="1"/>
+    <rect x="408" y="312" width="10" height="6" rx="1"/>
+  </g>
+
+  <!-- ── FIGURE (CSI Technician, side-on) ── -->
+  <!-- chair -->
+  <rect x="282" y="340" width="76" height="50" rx="6" fill="#0d1b3e" stroke="#1e3a5f" stroke-width="1.5"/>
+  <rect x="268" y="336" width="104" height="12" rx="4" fill="#1a2744" stroke="#1e3a5f" stroke-width="1"/>
+  <!-- chair legs -->
+  <rect x="286" y="388" width="10" height="22" rx="2" fill="#0d1b3e"/>
+  <rect x="344" y="388" width="10" height="22" rx="2" fill="#0d1b3e"/>
+  <!-- body (lab coat) -->
+  <ellipse cx="340" cy="330" rx="24" ry="34" fill="#1e3a5f"/>
+  <rect x="316" y="310" width="48" height="40" rx="6" fill="#243554"/>
+  <!-- lab coat collar/badge -->
+  <rect x="330" y="316" width="12" height="16" rx="3" fill="#06b6d4" opacity="0.8"/>
+  <text x="333" y="327" font-family="sans-serif" font-size="5" fill="#050d1a" font-weight="bold">CSI</text>
+  <!-- arms -->
+  <rect x="296" y="312" width="38" height="12" rx="6" fill="#243554" transform="rotate(-15,296,312)"/>
+  <rect x="370" y="312" width="30" height="12" rx="6" fill="#243554" transform="rotate(10,370,312)"/>
+  <!-- hands -->
+  <ellipse cx="292" cy="308" rx="9" ry="7" fill="#c8a882"/>
+  <ellipse cx="398" cy="316" rx="8" ry="6" fill="#c8a882"/>
+  <!-- neck -->
+  <rect x="330" y="286" width="20" height="18" rx="4" fill="#c8a882"/>
+  <!-- head -->
+  <ellipse cx="340" cy="272" rx="26" ry="28" fill="#c8a882"/>
+  <!-- hair -->
+  <ellipse cx="340" cy="250" rx="26" ry="12" fill="#1a0a00"/>
+  <rect x="314" y="250" width="52" height="10" rx="5" fill="#1a0a00"/>
+  <!-- eyes with glasses -->
+  <rect x="322" y="265" width="14" height="9" rx="4" fill="none" stroke="#243554" stroke-width="1.5"/>
+  <rect x="342" y="265" width="14" height="9" rx="4" fill="none" stroke="#243554" stroke-width="1.5"/>
+  <rect x="336" y="269" width="6" height="1.5" fill="#243554"/>
+  <circle cx="329" cy="269" r="3" fill="#1a4a7a" opacity="0.8"/>
+  <circle cx="349" cy="269" r="3" fill="#1a4a7a" opacity="0.8"/>
+  <!-- focused expression -->
+  <path d="M332 282 Q340 286 348 282" fill="none" stroke="#8a6040" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- ── HARD DRIVE on desk ── -->
+  <rect x="80" y="278" width="54" height="14" rx="4" fill="#0d1b3e" stroke="#06b6d4" stroke-width="1.5"/>
+  <rect x="84" y="281" width="10" height="8" rx="2" fill="#06b6d4" opacity="0.5"/>
+  <rect x="97" y="283" width="30" height="4" rx="2" fill="#1e3a5f"/>
+  <text x="84" y="275" font-family="'Courier New', monospace" font-size="6" fill="#06b6d4">EVIDENCE HDD</text>
+
+  <!-- ── MAGNIFYING GLASS over HDD ── -->
+  <g transform="translate(107,270)" filter="url(#glow)">
+    <circle cx="0" cy="0" r="18" fill="rgba(6,182,212,0.08)" stroke="#06b6d4" stroke-width="2.5"/>
+    <line x1="12" y1="12" x2="22" y2="22" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- ── EVIDENCE BAG ── -->
+  <rect x="520" y="270" width="46" height="24" rx="4" fill="#0d1b3e" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="524" y="274" width="38" height="16" rx="2" fill="rgba(245,158,11,0.08)"/>
+  <text x="527" y="283" font-family="'Courier New', monospace" font-size="6" fill="#f59e0b">EVIDENCE</text>
+  <text x="529" y="291" font-family="'Courier New', monospace" font-size="5.5" fill="#f59e0b">#EV-0042</text>
+
+  <!-- ── TITLE LABEL ── -->
+  <rect x="20" y="12" width="280" height="34" rx="8" fill="rgba(6,182,212,0.1)" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="32" y="28" font-family="'Courier New', monospace" font-size="10" fill="#06b6d4" font-weight="bold" filter="url(#glow)">DIGITAL FORENSICS UNIT</text>
+  <text x="32" y="40" font-family="'Courier New', monospace" font-size="7" fill="#a855f7">Computer Evidence Analysis Lab</text>
+
+  <!-- ── STATUS BADGES ── -->
+  <rect x="450" y="12" width="90" height="18" rx="9" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="1.5"/>
+  <circle cx="462" cy="21" r="4" fill="#10b981">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="470" y="25" font-family="'Courier New', monospace" font-size="7.5" fill="#10b981">LIVE SCAN</text>
+
+  <rect x="548" y="12" width="74" height="18" rx="9" fill="rgba(245,158,11,0.15)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="558" y="25" font-family="'Courier New', monospace" font-size="7.5" fill="#f59e0b">⚠ ACTIVE</text>
+
+  <!-- Floor shadow -->
+  <ellipse cx="340" cy="414" rx="200" ry="8" fill="rgba(0,0,0,0.3)"/>
+</svg>
