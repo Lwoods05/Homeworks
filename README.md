@@ -22,6 +22,10 @@ Portfolio website homework submission by **Lemar Woods**.
 - Gestalt design principles (proximity and similarity)
 - Fully accessible — passes WAVE with 0 errors, AIM Score 10/10
 
+## Project Note
+
+This homework project is a portfolio site for LWS Creations and is intended to showcase creative work, personal goals, and a contact form.
+
 ## File Structure
 
 ```
