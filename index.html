@@ -19,8 +19,16 @@
     <a class="skip-link" href="#main-content-title">Skip to main content</a>
     <div class="page">
         <header class="site-header">
-            <span class="site-brand">LWS Tech Skills</span>
-            <nav class="top-nav" aria-label="Main navigation">
+            <div class="header-row">
+                <span class="site-brand">LWS Tech Skills</span>
+                <div class="header-actions">
+                    <button class="theme-toggle" type="button" aria-label="Switch to dark mode"
+                        aria-pressed="false">🌙</button>
+                    <button class="nav-toggle" type="button" aria-label="Toggle navigation"
+                        aria-expanded="false">Menu</button>
+                </div>
+            </div>
+            <nav class="top-nav" aria-label="Main navigation" aria-hidden="true">
                 <a href="index.html" class="nav-box" aria-current="page">Home</a>
                 <a href="projects.html" class="nav-box">Skills</a>
                 <a href="about.html" class="nav-box">About</a>
@@ -36,6 +44,15 @@
                         I am Lemar Woods, a full-time IT student learning computer repair, hardware diagnostics,
                         and technical support. This site documents my skills, coursework, and tech journey.
                     </p>
+                    <button class="read-more-toggle" type="button" data-read-more-target="home-story"
+                        aria-expanded="false">Read more</button>
+                    <div id="home-story" class="read-more-content" hidden>
+                        <p>
+                            I enjoy learning how systems work behind the scenes and how practical support skills can
+                            make
+                            a real difference for everyday users.
+                        </p>
+                    </div>
                     <div class="hero-actions">
                         <a class="btn" href="./projects.html">View My Skills</a>
                         <a class="btn btn--secondary" href="./about.html">About Me</a>
@@ -78,7 +95,7 @@
         </main>
 
         <footer>
-            <p>&copy; 2026 LWS Tech Skills | Created by Lemar Woods</p>
+            <p>&copy; <span data-current-year></span> LWS Tech Skills | Created by Lemar Woods</p>
         </footer>
     </div>
     <script src="./assets/js/site.js"></script>
