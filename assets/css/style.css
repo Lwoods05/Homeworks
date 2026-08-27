@@ -717,3 +717,9 @@ button:focus {
     outline: 3px solid #ffcc00;
     outline-offset: 3px;
 }
+
+.form-success-message {
+    color: var(--green);
+    font-size: 0.9rem;
+    margin: 0.75rem 0 0;
+}
