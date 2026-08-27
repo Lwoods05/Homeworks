@@ -114,6 +114,37 @@
                     </p>
                 </article>
             </section>
+
+            <section class="content-grid interactive-panel" aria-labelledby="interactive-heading">
+                <h2 id="interactive-heading">Try the Interactive Diagnostics Panel</h2>
+                <article class="card interactive-card">
+                    <h3>Quick Troubleshooting Tip</h3>
+                    <p>Click for a random IT troubleshooting tip to try on your next fix.</p>
+                    <button type="button" class="btn spark-tip-btn">Get a troubleshooting tip</button>
+                    <p class="spark-tip-output" role="status">Click the button for a tip!</p>
+                </article>
+
+                <article class="card interactive-card">
+                    <h3>System Status Preview</h3>
+                    <label class="about-label" for="status-input">Type a status word (stable, warning, critical,
+                        offline, secure)</label>
+                    <input type="text" id="status-input" class="about-input"
+                        placeholder="e.g. stable, warning, critical" autocomplete="off">
+                    <div class="status-preview" aria-live="polite">Your system status preview will update here as
+                        you type.</div>
+                </article>
+
+                <article class="card interactive-card">
+                    <h3>My Skills Checklist</h3>
+                    <label class="about-label" for="skill-input">Add a skill you're practicing</label>
+                    <div class="skill-form-row">
+                        <input type="text" id="skill-input" class="about-input"
+                            placeholder="e.g. Diagnose boot failures" autocomplete="off">
+                        <button type="button" class="btn skill-add-btn">Add skill</button>
+                    </div>
+                    <ul class="skill-list" aria-live="polite"></ul>
+                </article>
+            </section>
         </main>
 
         <footer>
@@ -122,6 +153,7 @@
         </footer>
     </div>
     <script src="./assets/js/site.js"></script>
+    <script src="./assets/js/interactive.js"></script>
 </body>
 
 </html>
