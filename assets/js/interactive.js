@@ -6,13 +6,7 @@ const STATUS_STYLES = {
     secure: { background: '#e0f2fe', color: '#0284c7', label: 'Secure' },
 };
 
-const TROUBLESHOOTING_TIPS = [
-    'Always check the cable and power connection before opening the case.',
-    'Boot into safe mode to isolate whether a driver or startup app is the culprit.',
-    'Run a full malware scan whenever a system suddenly slows down.',
-    'Check Event Viewer logs for clues before reinstalling the OS.',
-    'Reseat RAM sticks if a machine won\'t POST or beeps on startup.',
-];
+const GITHUB_API_URL = 'https://api.github.com/users/Lwoods05';
 
 function initializeTipGenerator() {
     const tipButton = document.querySelector('.spark-tip-btn');
@@ -22,17 +16,24 @@ function initializeTipGenerator() {
         return;
     }
 
-    let lastIndex = -1;
-
     tipButton.addEventListener('click', () => {
-        let nextIndex = Math.floor(Math.random() * TROUBLESHOOTING_TIPS.length);
+        tipOutput.textContent = 'Loading GitHub profile...';
 
-        while (nextIndex === lastIndex && TROUBLESHOOTING_TIPS.length > 1) {
-            nextIndex = Math.floor(Math.random() * TROUBLESHOOTING_TIPS.length);
-        }
+        fetch(GITHUB_API_URL)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`Request failed with status ${response.status}`);
+                }
 
-        lastIndex = nextIndex;
-        tipOutput.textContent = TROUBLESHOOTING_TIPS[nextIndex];
+                return response.json();
+            })
+            .then((data) => {
+                tipOutput.textContent = `${data.login} has ${data.public_repos} public repos and ${data.followers} followers on GitHub!`;
+            })
+            .catch((error) => {
+                console.error('Could not load GitHub profile:', error);
+                tipOutput.textContent = 'Sorry, GitHub info is unavailable right now. Please try again later.';
+            });
     });
 }
 
