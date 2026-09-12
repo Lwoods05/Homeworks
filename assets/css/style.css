@@ -403,6 +403,7 @@ main {
 
 .about-card {
     background-color: var(--white);
+    color: var(--navy);
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: var(--shadow);
@@ -479,6 +480,16 @@ main {
     color: var(--navy);
     background-color: var(--white);
     font-size: 1rem;
+}
+
+.about-fieldset .btn--secondary {
+    background-color: transparent;
+    color: var(--navy);
+    border-color: var(--navy);
+}
+
+.about-fieldset .btn--secondary:hover {
+    background-color: rgba(15, 52, 96, 0.08);
 }
 
 .about-label {
