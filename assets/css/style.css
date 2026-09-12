@@ -170,10 +170,14 @@ a {
 
 .read-more-toggle {
     padding: 0.5rem 0.9rem;
+    margin-top: 0.75rem;
+}
+
+.card .read-more-toggle,
+.about-card .read-more-toggle {
     border-color: var(--border);
     background-color: transparent;
     color: var(--navy);
-    margin-top: 0.75rem;
 }
 
 .toggle-highlight {
@@ -273,7 +277,7 @@ main {
 .btn {
     display: inline-block;
     width: max-content;
-    background-color: var(--accent);
+    background-color: var(--mid);
     color: var(--white);
     padding: 0.7rem 1.6rem;
     border: none;
@@ -283,14 +287,14 @@ main {
     cursor: pointer;
     font: inherit;
     font-size: 0.95rem;
-    box-shadow: 0 2px 8px rgba(14, 165, 233, 0.3);
+    box-shadow: 0 2px 8px rgba(30, 64, 175, 0.3);
     transition: background-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
 }
 
 .btn:hover {
-    background-color: #0284c7;
+    filter: brightness(0.9);
     transform: translateY(-1px);
-    box-shadow: 0 4px 14px rgba(14, 165, 233, 0.4);
+    box-shadow: 0 4px 14px rgba(30, 64, 175, 0.4);
 }
 
 .btn--secondary {
